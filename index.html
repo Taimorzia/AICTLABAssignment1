@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tony Stark University</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎓 Tony Stark University</h1>
+    <p>Learn. Grow. Lead.</p>
+  </header>
+
+  <!-- NAVIGATION MENU -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#programs">Programs</a>
+    <a href="#gallery">Campus</a>
+    <a href="#admission">Admission</a>
+  </nav>
+
+  <!-- HERO BANNER (big picture with text) -->
+  <div class="hero" id="home">
+    <h2>Welcome to Tony Stark University</h2>
+    <p>Quality education for a bright future</p>
+    <button onclick="showWelcome()">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- Statistics -->
+    <div class="stats">
+      <div class="stat-box">
+        <h3>5000+</h3>
+        <p>Students</p>
+      </div>
+      <div class="stat-box">
+        <h3>200+</h3>
+        <p>Teachers</p>
+      </div>
+      <div class="stat-box">
+        <h3>30+</h3>
+        <p>Programs</p>
+      </div>
+      <div class="stat-box">
+        <h3>25</h3>
+        <p>Years of Excellence</p>
+      </div>
+    </div>
+
+    <!-- About section with picture -->
+    <section id="about">
+      <h2>About Us</h2>
+      <img class="about-img" src="images/about.jpg" alt="University building">
+      <p>Tony Stark University was founded in 2001 with a simple goal: to give every student
+         a chance to learn and grow. Our campus has modern classrooms, a big library,
+         computer labs and sports grounds.</p>
+      <p>Our teachers are experienced and friendly, and our students come from all over the
+         country to study here.</p>
+      <div class="clear"></div>
+    </section>
+
+    <!-- Why choose us (cards) -->
+    <section id="why">
+      <h2>Why Choose Us?</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">📚</div>
+          <h3>Big Library</h3>
+          <p>Thousands of books and online journals.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Modern Labs</h3>
+          <p>Latest computers and equipment.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏆</div>
+          <h3>Scholarships</h3>
+          <p>Financial help for brilliant students.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚽</div>
+          <h3>Sports</h3>
+          <p>Cricket, football and indoor games.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Departments list -->
+    <section id="departments">
+      <h2>Our Departments</h2>
+      <ul>
+        <li>💻 Department of Computer Science</li>
+        <li>📊 Department of Business Administration</li>
+        <li>⚡ Department of Electrical Engineering</li>
+        <li>➗ Department of Mathematics</li>
+        <li>📖 Department of English Literature</li>
+        <li>🔬 Department of Physics</li>
+      </ul>
+    </section>
+
+    <!-- Programs table -->
+    <section id="programs">
+      <h2>Academic Programs</h2>
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Duration</th>
+          <th>Degree Title</th>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>4 Years</td>
+          <td>BS Computer Science</td>
+        </tr>
+        <tr>
+          <td>Business Administration</td>
+          <td>4 Years</td>
+          <td>BBA</td>
+        </tr>
+        <tr>
+          <td>Electrical Engineering</td>
+          <td>4 Years</td>
+          <td>BE Electrical Engineering</td>
+        </tr>
+        <tr>
+          <td>Data Science</td>
+          <td>2 Years</td>
+          <td>MS Data Science</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Image gallery -->
+    <section id="gallery">
+      <h2>Our Campus</h2>
+      <img class="campus-img" src="images/campus1.jpg" alt="University building">
+      <img class="campus-img" src="images/campus2.jpg" alt="University campus">
+      <img class="campus-img" src="images/campus3.jpg" alt="Campus garden">
+      <img class="campus-img" src="images/campus4.jpg" alt="Library">
+    </section>
+
+    <!-- Admission form -->
+    <section id="admission">
+      <h2>Admission Inquiry</h2>
+      <form>
+        <label>Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label>Contact Number:</label><br>
+        <input type="text" name="contact" placeholder="Enter your phone number"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Program:</label><br>
+        <select name="program">
+          <option>Computer Science</option>
+          <option>Business Administration</option>
+          <option>Electrical Engineering</option>
+          <option>Data Science</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Main Campus, University Road &nbsp;|&nbsp; 📞 0300-1234567 &nbsp;|&nbsp; ✉️ info@Tony Stark.edu</p>
+    <p>&copy; 2026 Greenfield University. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

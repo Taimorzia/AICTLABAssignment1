@@ -1,0 +1,337 @@
+/* ---------- General page style ---------- */
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #eef3f9;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(to right, #740505, #580404);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 5px solid #ffc107;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 44px;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #ffd966;
+}
+
+/* ---------- Navigation menu ---------- */
+nav {
+  background-color: #660000;
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 25px;
+}
+
+nav a:hover {
+  background-color: #ffc107;
+  color: #003366;
+}
+
+/* ---------- Main content and sections ---------- */
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  margin: 30px auto;
+  padding: 25px 30px;
+  width: 80%;
+  border-left: 6px solid #551515;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #55040b;
+  font-size: 28px;
+  margin-top: 0;
+  border-bottom: 2px dashed #ffc107;
+  padding-bottom: 8px;
+}
+
+/* ---------- List styling ---------- */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #e6f0ff;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-left: 5px solid #ffc107;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #551515
+}
+
+ul li:hover {
+  background-color: #cce0ff;
+}
+
+/* ---------- Table styling ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+th {
+  background-color: #551515;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #e6f0ff;
+}
+
+tr:hover td {
+  background-color: #fff3cd;
+}
+
+/* ---------- Image styling (size and alignment) ---------- */
+#gallery {
+  text-align: center;
+}
+
+.campus-img {
+  width: 45%;
+  height: 230px;
+  margin: 10px;
+  border: 4px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Form styling ---------- */
+label {
+  font-weight: bold;
+  color: #551515;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 300px;
+  max-width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #b3c6e0;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #551515;
+  outline: none;
+  background-color: #f0f7ff;
+}
+
+input[type="submit"],
+button {
+  background-color: #551515;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #ffc107;
+  color: #551515;
+}
+
+#message {
+  color: #1a8a3a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color:  #551515;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 5px solid #ffc107;
+}
+
+/* ---------- Mobile screens ---------- */
+@media (max-width: 700px) {
+  section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .campus-img {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+/* ---------- NEW: Hero banner ---------- */
+.hero {
+  background-image: linear-gradient( #551515,  #551515),
+                    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 40px;
+  border-bottom: none;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 22px;
+}
+
+.hero #message {
+  color: #ffd966;
+}
+
+/* ---------- NEW: Statistics boxes ---------- */
+.stats {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-box {
+  display: inline-block;
+  width: 21%;
+  margin: 10px 1%;
+  padding: 20px 5px;
+  background-color: #551515;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 36px;
+  color: #ffd966;
+}
+
+.stat-box p {
+  margin: 5px 0 0 0;
+}
+
+/* ---------- NEW: About section image ---------- */
+.about-img {
+  float: left;
+  width: 350px;
+  max-width: 100%;
+  margin: 0 25px 10px 0;
+  border: 4px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.clear {
+  clear: both;
+}
+
+/* ---------- NEW: Why choose us cards ---------- */
+.cards {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 21%;
+  margin: 10px 1%;
+  padding: 20px 10px;
+  background-color: #fff8e1;
+  border-top: 5px solid #ffc107;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  background-color: #ffecb3;
+}
+
+.card .icon {
+  font-size: 45px;
+}
+
+.card h3 {
+  color: #551515;
+  margin: 5px 0;
+}
+
+/* ---------- NEW: Gallery with 4 images ---------- */
+.campus-img {
+  width: 44%;
+}
+
+/* ---------- NEW: smaller screens for new parts ---------- */
+@media (max-width: 700px) {
+  .stat-box,
+  .card {
+    width: 80%;
+  }
+
+  .about-img {
+    float: none;
+    margin: 0 0 15px 0;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
